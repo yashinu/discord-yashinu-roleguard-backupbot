@@ -5,6 +5,7 @@ const fs = require('fs');
 const mongoose = require('mongoose');
 mongoose.connect('', {useNewUrlParser: true, useUnifiedTopology: true});// Mongo connect bağlantısı.
 const Database = require("./models/role.js");
+// Yashinu tarafından kodlanmıştır.
 
 client.on("ready", async () => {
   client.user.setPresence({ activity: { name: "Serendia ❤️ Yashinu" }, status: "idle" });
