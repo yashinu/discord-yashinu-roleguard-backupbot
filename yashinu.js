@@ -11,6 +11,7 @@ client.on("ready", async () => {
   client.user.setPresence({ activity: { name: "Serendia ❤️ Yashinu" }, status: "idle" });
   let botVoiceChannel = client.channels.cache.get(ayarlar.botVoiceChannelID);
   if (botVoiceChannel) botVoiceChannel.join().catch(err => console.error("Bot ses kanalına bağlanamadı!"));
+  setRoleBackup();
   setInterval(() => {
     setRoleBackup();
   }, 1000*60*60*1);
